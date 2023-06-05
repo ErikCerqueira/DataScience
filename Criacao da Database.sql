@@ -1,8 +1,13 @@
+/* ESSAS TABELAS FORAM CONSTRUIDAS COM BASE EM DADOS FICTICIOS PARA
+EXEMPLIFICACAO*/
+
 create table departamentos (
     departamento varchar(100),
     divisao varchar(100),
     primary key (departamento)
   );
+/* O PRIMARY KEY PODERIA ESTAR JUNTO A DEPARTAMENTO 
+"VARCHAR(100) PRIMARY KEY"*/
 
 insert into departamentos values ('Automotivo','Auto & Hardware');
 insert into departamentos values ('Bebês','Casa e Afins');
@@ -27,12 +32,12 @@ insert into departamentos values ('Ferramentas','Auto & Hardware');
 insert into departamentos values ('Brinquedos','Games & Esporte');
 
 
-create table localizacao (
-   idRegiao int,
-   localizacao varchar(20),
-   pais varchar(20),
-   primary key (idRegiao)
-  );
+  create table localizacao (
+     idRegiao int,
+     localizacao varchar(20),
+     pais varchar(20),
+     primary key (idRegiao)
+    );
 
 insert into localizacao values (1, 'Nordeste', 'Brasil');
 insert into localizacao values (2, 'Sudeste', 'Brasil');
